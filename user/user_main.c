@@ -1872,8 +1872,8 @@ void ICACHE_FLASH_ATTR console_handle_command(struct espconn *pespconn)
 		  config.automesh_checked = 0;
 		  config.automesh_mode = AUTOMESH_LEARNING;
 		}
-		config.auto_connect = 1;
-                os_sprintf_flash(response, "SSID set (auto_connect = 1)\r\n");
+		//config.auto_connect = 1;
+                os_sprintf_flash(response, "SSID set (auto_connect = 0)\r\n");
                 goto command_handled;
             }
 
